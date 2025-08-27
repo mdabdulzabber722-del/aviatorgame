@@ -23,7 +23,7 @@ export default defineConfig({
     host: true,
   },
   preview: {
-    port: parseInt(process.env.PORT || '3000'),
+    port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
     host: true,
   },
   optimizeDeps: {
